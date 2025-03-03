@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="visuospatialCSS.css">
+        <link rel="shortcut icon" href="../../HomeMenu/TestSelection/images/camello.png">
+        <title>MOCA</title>
+    </head>
+    <body> 
+        <img src="../returnButton.png" alt="buttonpng" onclick="window.history.back()" width="50px" height="50px" style="margin: 4px 4px;"/>
+        <section class="section1">
+            <h1 id="title">Dibuja el grafo y copia el cubo</h1>
+            <h1 id="message"></h1>
+            
+        </section>
+        <section class="section2">
+            <canvas class="canvas" id="canvas" width="150" height="150"></canvas>
+            <h1 id="score" style="font-size:40px"></h1>
+        </section>
+        <section class="section3">
+            <button id="erase" class="play" onclick="erase()">BORRAR DIBUJO</button>
+            <button id="next" class="play" onclick="saveCanvas()">SIGUIENTE</button>
+            <a id="link"></a>
+        </section>
+        <script src="visuospatialJS.js"></script>
+    </body>
+</html>

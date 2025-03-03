@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="../HomeMenu/TestSelection/images/PlayerTower.png">
+        <title>Noquea las Torres</title>
+    </head>
+    <body> 
+        <img src="returnButton.png" alt="buttonpng" onclick="window.history.back()" width="40px" height="40px" style="margin: 3px 3px;"/>
+        <section class="section1">
+            <h1 id="puntuaction" class="puntuaction">Acaba con los enemigos para obtener la gema de la Esperanza</h1>
+            <div class="timer"><h2 id="timer">00:00</h2></div>
+            <button id="play" class="play" onclick="playAgainMethod()">Volver a Jugar</button>
+            <button id="music" onclick="turnMusic()">ENCENDER MÚSICA</button>
+            <div class="board"></div>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>

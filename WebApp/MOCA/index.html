@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="#">
+        <title>MOCA</title>
+    </head>
+    <body> 
+        <section class="section1">
+            <h1 id="title">Trata de darle en el centro de los circulos para conseguir puntos. Cuanto más cerca, más puntos.</h1>
+            <h1 id="message">Empieza el Juego Dandole a JUGAR</h1>
+            <div id="puntuaction" class="puntuaction"></div>
+        </section>
+        <section class="section2">
+            <section class="section2_2">
+                <h3 style="text-align: center;">NOMBRE:</h3>
+                <input type="text" class="textInput" id="Text1"/>
+            </section>
+            <section class="section2_4">
+                <h3 style="text-align: center;">Nivel de Estudios:</h3>
+                <input type="text" class="textInput" id="Text2"/>
+            </section>
+            <section class="section2_6">
+                <h3 style="text-align: center;">Sexo:</h3>
+                <input type="text" class="textInputShort" id="Text3"/>
+            </section>
+            <section class="section2_8">
+                <h3 style="text-align: center;">Fecha de Nacimiento</h3>
+                <input type="date" class="textInputShort" id="Text4"/>
+            </section>
+            <section class="section2_9">
+                <h3 style="text-align: center;">FECHA:</h3>
+                <input type="date" class="textInputShort" id="Text5"/>
+            </section>
+        </section>
+        <section class="section3">
+            <button id="play" class="play" onclick="startMOCA()">EMPEZAR MOCA</button>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>

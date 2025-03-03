@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="#">
+        <title>Menu</title>
+    </head>
+    <body> 
+        <section class="section1">
+            <h1 id="title">Rellene los campos con su información</h1>
+        </section>
+        <section class="section2">
+            <section class="section2_2">
+                <h3 style="text-align: center;">Nombre:</h3>
+                <input type="text" class="textInput" id="Text1"/>
+            </section>
+            <section class="section2_3">
+                <h3 style="text-align: center;">EDAD:</h3>
+                <input type="text" class="textInput" id="Text6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"/>
+            </section>
+            <section class="section2_4">
+                <h3 style="text-align: center;">Nivel de Estudios:</h3>
+                <input type="text" class="textInput" id="Text2"/>
+            </section>
+            <section class="section2_6">
+                <h3 style="text-align: center;">Sexo:</h3>
+                <select name="Sexo" id="Text3">
+                    <option value="varón">Varón</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+            </section>
+            <section class="section2_8">
+                <h3 style="text-align: center;">Fecha de Nacimiento:</h3>
+                <input type="date" class="textInputShort" id="Text4"/>
+            </section>
+            <section class="section2_9">
+                <h3 style="text-align: center;">Fecha:</h3>
+                <input type="date" class="textInputShort" id="Text5"/>
+            </section>
+        </section>
+        <section class="section3">
+            <button id="play" class="play" onclick="startTest()">Comenzar con las Pruebas</button>
+        </section>
+        <div class="d-flex flex-column justify-content-center w-100 h-100">
+        </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

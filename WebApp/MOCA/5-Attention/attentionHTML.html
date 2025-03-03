@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="attentionCSS.css">
+        <link rel="shortcut icon" href="../../HomeMenu/TestSelection/images/camello.png">
+        <title>MOCA</title>
+    </head>
+    <body> 
+        <!---<img src="../returnButton.png" alt="buttonpng" onclick="window.location.href = '../../HomeMenu/TestSelection/testSelectionHTML.html';" width="50px" height="50px" style="margin: 4px 4px;"/>-->
+        <section class="section1">
+            <h1 id="title">En esta prueba tendrás que prestar atención y seguir las instrucciones. 
+            </h1>
+        </section>
+        <section class="section2" id="section2">
+            <section class="section2_3"> 
+                <h2 style="text-align: center;">1) Repita los números<h2>
+            </section>
+            <section class="section2_5">
+                <audio id="audio1" controls src="AudioNumeros.mp3"></audio>
+            </section>
+            <section class="section2_7">
+                <button id="record">Grabar</button>
+                <button id="recordStop">Parar</button>
+            </section>
+            <section class="section3_3"> 
+                <h2 style="text-align: center;">2) Repita los números a la inversa<h2>
+            </section>
+            <section class="section3_5">
+                <audio id="audio2" controls src="AudioNumerosInversa.mp3"></audio>
+            </section>
+            <section class="section3_7">
+                <button id="record2">Grabar</button>
+                <button id="recordStop2">Parar</button>
+            </section>
+            <section class="section4_3"> 
+                <h2 style="text-align: center;">3) Dale al boton "LETRA" cada vez que escuhes la letra A<h2>
+            </section>
+            <section class="section4_5">
+                <audio id="audio3" controls src="AudioLetrasA.mp3"></audio>
+            </section>
+            <section class="section4_7">
+                <button id="buttonA" onclick="letterAButton()">LETRA</button>
+            </section>
+            <section class="section5_3">
+                <h2 style="text-align: center;">4) Resta de 7 en 7 desde 100 empezando de izquieda a derecha<h2>
+            </section>
+            <section class="section5_5">
+                <input type="text" class="textInput" id="Text1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <input type="text" class="textInput" id="Text2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <input type="text" class="textInput" id="Text3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <input type="text" class="textInput" id="Text4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+                <input type="text" class="textInput" id="Text5" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" />
+            </section>
+        </section>
+        <section class="section6">
+            <button id="next" class="play" onclick="saveAnswers()">SIGUIENTE</button>
+            <a id="link"></a>
+        </section>
+        <script src="attentionJS.js"></script>
+    </body>
+</html>

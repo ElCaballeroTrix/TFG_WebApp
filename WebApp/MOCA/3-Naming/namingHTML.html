@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="namingCSS.css">
+        <link rel="shortcut icon" href="../../HomeMenu/TestSelection/images/camello.png">
+        <title>MOCA</title>
+    </head>
+    <body> 
+        <!---<img src="../returnButton.png" alt="buttonpng" onclick="window.location.href = '../../HomeMenu/TestSelection/testSelectionHTML.html';" width="50px" height="50px" style="margin: 4px 4px;"/>-->
+        <section class="section1">
+            <h1 id="title">Identifica los dibujos</h1>
+            <h1 id="message"></h1> 
+        </section>
+        <section class="section2">
+            <canvas class="canvas" id="canvas" width="150" height="150"></canvas>
+            <h1 id="score" style="font-size:40px"></h1>
+        </section>
+        <section class="section2_5">
+            <div>Dibujo Izquierda</div>
+            <div>Dibujo Centro</div>
+            <div>Dibujo Derecha</div>
+        </section>
+        <section class="section3">
+            <input type="text" class="textInput" id="Text1"/>
+            <input type="text" class="textInput" id="Text2"/>
+            <input type="text" class="textInput" id="Text3"/>
+        </section>
+        <section class="section4">
+            <button id="next" class="play" onclick="saveAnswers()">SIGUIENTE</button>
+            <a id="link"></a>
+        </section>
+        <script src="namingJS.js"></script>
+    </body>
+</html>

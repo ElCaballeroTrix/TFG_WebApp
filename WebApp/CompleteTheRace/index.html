@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="../HomeMenu/TestSelection/images/meta.PNG">
+        <title>Meta bola</title>
+    </head>
+    <body> 
+        <img src="returnButton.png" alt="buttonpng" onclick="window.history.back()" width="50px" height="50px" style="margin: 4px 4px;"/>
+        <section class="section1">
+            <h1 id="title">Trata de averiguar, cuando llegara la bola al final. Cuanto más cerca, más puntos.</h1>
+            <h1 id="message">Selecciona un nivel y dale a JUGAR</h1>
+            <div id="puntuaction" class="puntuaction"></div>  
+            <button id="level1" class="level" onclick="changeLevel(1)">NIVEL 1</button>
+            <button id="level2" class="level" onclick="changeLevel(2)">NIVEL 2</button>
+            <button id="level3" class="level" onclick="changeLevel(3)">NIVEL 3</button>  
+        </section>
+        <section class="section1_5">
+            <button id="play" class="play" onclick="play()">JUGAR</button>
+            <button id="stopBall" class="play" onclick="stopBall(true)">Parar La Bola</button>
+        </section>
+        <section class="section2">       
+            <canvas class="circle" id="circle" width="150" height="150"></canvas>
+            <h1 id="score" style="font-size:40px"></h1>
+            </section>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="../HomeMenu/TestSelection/images/coco.png">
+        <title>Juego de Parejas</title>
+    </head>
+    <body>
+       <img id="returnButton" src="returnButton.png" alt="buttonpng" onclick="window.history.back()" width="50px" height="50px" style="margin: 2px 2px;"/>
+       <main>
+        <section class="section1">
+            <h1>Juego de las Parejas</h1>
+            <button class="button1" style="visibility: hidden;" disabled="true">d</button>
+            <button class="button1" id="nivel1" onclick="changeLevel(1)">Nivel 1</button>
+            <button class="button1" id="nivel2" onclick="changeLevel(2)">Nivel 2</button>
+            <table id="board">
+                <tr>
+                    <td><button id="0" onclick="uncover(0)"></button></td>
+                    <td><button id="1" onclick="uncover(1)"></button></td>
+                    <td><button id="2" onclick="uncover(2)"></button></td>
+                    <td><button id="3" onclick="uncover(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="uncover(4)"></button></td>
+                    <td><button id="5" onclick="uncover(5)"></button></td>
+                    <td><button id="6" onclick="uncover(6)"></button></td>
+                    <td><button id="7" onclick="uncover(7)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="8" onclick="uncover(8)"></button></td>
+                    <td><button id="9" onclick="uncover(9)"></button></td>
+                    <td><button id="10" onclick="uncover(10)"></button></td>
+                    <td><button id="11" onclick="uncover(11)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="uncover(12)"></button></td>
+                    <td><button id="13" onclick="uncover(13)"></button></td>
+                    <td><button id="14" onclick="uncover(14)"></button></td>
+                    <td><button id="15" onclick="uncover(15)"></button></td>
+                </tr>
+            </table>
+        </section>
+        <section class="section2">
+            <h2 id="successes" class="estadisticas">Aciertos: 0</h2>
+            <h2 id="timeLeft" class="estadisticas">Tiempo: 120 segundos</h2>
+            <h2 id="moves" class="estadisticas">Movimientos: 0</h2>
+        </section>
+       </main> 
+       <script src="main.js"></script>
+    </body>
+</html>

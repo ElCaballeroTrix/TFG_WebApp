@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="../HomeMenu/TestSelection/images/brain.png">
+        <title>Recuerda Palabras</title>
+    </head>
+    <body> 
+        <img src="returnButton.png" alt="buttonpng" onclick="window.history.back()" width="50px" height="50px" style="margin: 4px 4px;"/>
+        <section class="section1">
+            <h1 id="timer">00:06</h1>
+            <h1 id="description">Memoriza las palabras</h1>
+            <div id="punctuation" class="punctuation">_/_</div>
+            <div class="board"></div>
+            <button id="play" class="play" onclick="play()">JUGAR</button>
+        </section>
+        <section class="section2">
+            <section class="Level">
+            <h2>NIVEL:</h2>
+            <button class="buttonLevel" id="3L" onclick="changeLevel('3L')">3 palabras</button>
+            <button class="buttonLevel" id="4L"  onclick="changeLevel('4L')">4 palabras</button>
+            <button class="buttonLevel" id="6L"  onclick="changeLevel('6L')">6 palabras</button>
+            <button class="buttonLevel" id="8L"  onclick="changeLevel('8L')">8 palabras</button>
+            <button class="buttonLevel" id="10L"  onclick="changeLevel('10L')">10 palabras</button>
+            <button class="buttonLevel" id="16L"  onclick="changeLevel('16L')">16 palabras</button>
+            </section>
+            <section class="Countdown">
+            <h2>MOSTRAR TIEMPO:</h2>
+            <button class="buttonCountdown" id="ON" onclick="changeCountdownShown('ON')">SÍ</button>
+            <button class="buttonCountdown" id="OFF" onclick="changeCountdownShown('OFF')">NO</button>
+            </section>
+            <section class="DisplayTime">
+            <h2>TEMPORIZADOR:</h2>
+            <button class="buttonDisplayTime" id="06" onclick="changeTime(06)">00:06</button>
+            <button class="buttonDisplayTime" id="15" onclick="changeTime(15)">00:15</button>
+            <button class="buttonDisplayTime" id="20" onclick="changeTime(20)">00:20</button>
+            <button class="buttonDisplayTime" id="40" onclick="changeTime(40)">00:40</button>
+            <button class="buttonDisplayTime" id="1:00" onclick="changeTime(1)">1:00</button>
+            </section>
+        </section>
+        <script src="main.js"></script>
+    </body>
+</html>

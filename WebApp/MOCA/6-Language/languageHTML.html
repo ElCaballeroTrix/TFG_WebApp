@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="languageCSS.css">
+        <link rel="shortcut icon" href="../../HomeMenu/TestSelection/images/leon.png">
+        <title>MOCA</title>
+    </head>
+    <body> 
+        <!---<img src="../returnButton.png" alt="buttonpng" onclick="window.location.href = '../../HomeMenu/TestSelection/testSelectionHTML.html';" width="50px" height="50px" style="margin: 4px 4px;"/>-->
+        <section class="section1">
+            <h1 id="title">En esta prueba leerás dos frases y tendrás que repetirlas. Después, deberas decir el mayor número posible de palabras que comiencen por la "P" en un minuto. Por último, escribir la similitud entre un par de parejas.
+            </h1>
+        </section>
+        <section class="section2" id="section2">
+            <section class="section2_3"> 
+                <h2 style="text-align: center;">1) Repita la frase:<h2>
+            </section>
+            <section class="section2_5"> 
+                <h3 style="text-align: center;">El gato se esconde bajo el sofá cuando los perros entran en la sala.</h2>
+            </section>
+            <section class="section2_7">
+                <button id="record">Grabar</button>
+                <button id="recordStop">Parar</button>
+            </section>
+            <section class="section3_3"> 
+                <h2 style="text-align: center;">2) Repita la frase:<h2>
+            </section>
+            <section class="section3_5"> 
+                <h3 style="text-align: center;">Espero que él entregue el mensaje una vez que ella se lo pida.</h2>
+            </section>
+            <section class="section3_7">
+                <button id="record2">Grabar</button>
+                <button id="recordStop2">Parar</button>
+            </section>
+            <section class="section4_3"> 
+                <h2 style="text-align: center;">3) Di el mayor número posible de palabras  que comiencen por la letra "P".<h2>
+            </section>
+            <section class="section4_5">
+                <button id="relleno1" style="visibility: hidden;">Grabar</button>
+                <button id="relleno2" style="visibility: hidden;">Grabar</button>
+                <button id="record3">Grabar</button>
+                <button id="timer" ></button>
+                <button id="recordStop3">Parar</button>
+            </section>
+            <section class="section5_3">
+                <h2 style="text-align: center;">4) Di la similitud entre las parejas, por ejemplo:<h2>
+            </section>
+            <section class="section5_5">
+                <h2 style="text-align: center;"> manzana-naranja = fruta</h2>
+            </section>
+            <section class="section5_7">
+                <h3 id="pair1"></h3>
+                <input type="text" class="textInput" id="Text1"/>
+                <h3 id="pair2"></h3>
+                <input type="text" class="textInput" id="Text2"/>
+            </section>
+        </section>
+        <section class="section6">
+            <button id="next" class="play" onclick="saveAnswers()">SIGUIENTE</button>
+            <a id="link"></a>
+        </section>
+        <script src="languageJS.js"></script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="memoryCSS.css">
+        <link rel="shortcut icon" href="../../HomeMenu/TestSelection/images/leon.png">
+        <title>MOCA</title>
+    </head>
+    <body> 
+        <!---<img src="../returnButton.png" alt="buttonpng" onclick="window.location.href = '../../HomeMenu/TestSelection/testSelectionHTML.html';" width="50px" height="50px" style="margin: 4px 4px;"/>-->
+        <section class="section1">
+            <h1 id="title">En esta prueba escucharas unas palabras y tendrás que repetirlas sin importar el orden. 
+                Después de un minuto, escúchalas otra vez e intente repetirlas.
+                Memoriza las palabras porque te preguntarán sobre ellas en una prueba futura.
+            </h1>
+            <h1 id="message">Dale al boton de audio para comenzar, y despúes, al botón "Grabar".</h1> 
+        </section>
+        <section class="section2" id="section2">
+            <section class="section2_3"> 
+                <h2 style="text-align: center;">Reproducir audio<h2>
+            </section>
+            <section class="section2_5">
+                <audio id="audio" controls src="AudioMemoria.mp3"></audio>
+            </section>
+            <section class="section2_7">
+                <h2 id="timer"></h2>
+            </section>
+            <section class="section2_9">
+                <button id="record">Grabar</button>
+                <button id="recordStop">Parar</button>
+            </section>
+        </section>
+        <section class="section3">
+            <button id="next" class="play" onclick="saveAnswers()">SIGUIENTE</button>
+            <a id="link"></a>
+        </section>
+        <script src="memoryJS.js"></script>
+    </body>
+</html>

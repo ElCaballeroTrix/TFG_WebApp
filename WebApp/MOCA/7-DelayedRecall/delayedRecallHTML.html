@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-EDGE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <link rel="stylesheet" href="delayedRecallCSS.css">
+        <link rel="shortcut icon" href="../../HomeMenu/TestSelection/images/camello.png">
+        <title>MOCA</title>
+    </head>
+    <body> 
+        <!---<img src="../returnButton.png" alt="buttonpng" onclick="window.location.href = '../../HomeMenu/TestSelection/testSelectionHTML.html';" width="50px" height="50px" style="margin: 4px 4px;"/>-->
+        <section class="section1">
+            <h1 id="title">En esta prueba debera escribir las 5 palabras memorizadas intentando hacerlo sin pistas. 
+                Después, escriba la fecha y lugar donde esta haciendo las pruebas.
+            </h1>
+        </section>
+        <section class="section2" id="section2">
+            <section class="section2_5">
+                <h2 style="text-align: center;">1) Complete los campos con las palabras que se acuerde:<h2></h2>
+            </section>
+            <section class="section3_1"> 
+                <h2>1ª Palabra</h2>
+                <h2>2ª Palabra</h2>
+                <h2>3ª Palabra</h2>
+                <h2>4ª Palabra</h2>
+                <h2>5ª Palabra</h2>
+            </section>
+            <section class="section3_3"> 
+                <input type="text" class="textInput" id="Text1"/>
+                <input type="text" class="textInput" id="Text2"/>
+                <input type="text" class="textInput" id="Text3"/>
+                <input type="text" class="textInput" id="Text4"/>
+                <input type="text" class="textInput" id="Text5"/>
+            </section>
+            <section class="section3_5"> 
+                <button id="buttonPista1Text1" onclick="showHint(1,1)">Pista 1</button>
+                <button id="buttonPista1Text2" onclick="showHint(2,1)">Pista 1</button>
+                <button id="buttonPista1Text3" onclick="showHint(3,1)">Pista 1</button>
+                <button id="buttonPista1Text4" onclick="showHint(4,1)">Pista 1</button>
+                <button id="buttonPista1Text5" onclick="showHint(5,1)">Pista 1</button>
+            </section>
+            <section class="section3_7"> 
+                <button id="buttonPista2Text1" onclick="showHint(1,2)">Pista 2</button>
+                <button id="buttonPista2Text2" onclick="showHint(2,2)">Pista 2</button>
+                <button id="buttonPista2Text3" onclick="showHint(3,2)">Pista 2</button>
+                <button id="buttonPista2Text4" onclick="showHint(4,2)">Pista 2</button>
+                <button id="buttonPista2Text5" onclick="showHint(5,2)">Pista 2</button>
+            </section>
+            <section class="section4_3">
+                <h2 style="text-align: center;">2) Complete los campos:</h2>
+            </section>
+            <section class="section4_5">
+                <h3 style="text-align: center;">Día del mes</h3>
+                <input type="text" class="textInput2" id="Date1"/>
+                <h3 style="text-align: center;">Mes</h3>
+                <input type="text" class="textInput2" id="Date2"/>
+                <h3 style="text-align: center;">Año</h3>
+                <input type="text" class="textInput2" id="Date3"/>
+            </section>
+            <section class="section4_7">
+                <h3 style="text-align: center;">Día de la semana</h3>
+                <input type="text" class="textInput2" id="Date4"/>
+                <h3 style="text-align: center;">Lugar</h3>
+                <input type="text" class="textInput2" id="Date5"/>
+                <h3 style="text-align: center;">Localidad</h3>
+                <input type="text" class="textInput2" id="Date6"/>
+            </section>
+        </section>
+        <section class="section6">
+            <button id="next" class="play" onclick="saveAnswers()">FINALIZAR</button>
+            <a id="link"></a>
+            <div class='wrapper'>
+                <div id="snackbar1_1"></div><div id="snackbar1_2"></div>
+                <div id="snackbar2_1"></div><div id="snackbar2_2"></div>
+                <div id="snackbar3_1"></div><div id="snackbar3_2"></div>
+                <div id="snackbar4_1"></div><div id="snackbar4_2"></div>
+                <div id="snackbar5_1"></div><div id="snackbar5_2"></div>
+            </div>
+        </section>
+        <script src="delayedRecallJS.js"></script>
+    </body>
+</html>
